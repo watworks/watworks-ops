@@ -4,6 +4,7 @@
 #also you cannot set the environment from within make, so this step cannot be ran from a makefile
 #to avoid this step add "./" to the start of your $PATH in .bashrc or .bash_profile (MacOS)
 
+#Usage
 #source makepath
 
 export PATH=./:$PATH
