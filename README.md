@@ -15,3 +15,5 @@ The end result is that you simply type the commands you would normally want to u
 Depends on adding "./" to the system path which is done by **sourcing** the _makepath_ file
 
 Assumes you have AWS credentials stored in _~/.aws_ and are mapped to _/root/.aws_ in an container running _awscli_
+
+Assumes you have a container that will run _awscli_
