@@ -1,6 +1,8 @@
 # watworks-ops
 
-Watworks-ops is currently planned as a series of containers for building container environments
+Watworks-ops is currently planned as a series of containers for building container environments (kubernetes).
+
+It is going to be geared toward AWS starting off, but engineered to be deployable to GCE or Azure as well
 
 It employs a technique I'm currently dubbing "container transparency"
 
