@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#you must process this file using the source command because of BASHful reasons
+#also you cannot set the environment from within make, so this step cannot be ran from a makefile
+#to avoid this step add "./" the start of your $PATH in .bashrc or .bash_profile (MacOS)
+
+#source makepath
+
+export PATH=./:$PATH
+echo $PATH
