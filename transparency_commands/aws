@@ -1,0 +1,10 @@
+#/bin/bash
+
+#run command in docker container. Will pass the name of the script and additional arguments
+
+#debugging line - verify that we're running the transparency command not a local command
+echo $0
+echo ""
+
+docker run -v ~/.aws:/root/.aws -it coreos-aws-cli "${0##*/}" "${@}"
+

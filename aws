@@ -1,6 +1,0 @@
-#/bin/bash
-
-#run command in docker container. Will pass the name of the script and additional arguments
-
-docker run -v ~/.aws:/root/.aws -it AWS-DOCKER-CONTAINER-NAME "${0##*/}" "${@}"
-
