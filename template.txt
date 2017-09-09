@@ -1,7 +1,7 @@
 #/bin/bash
 
-container="coreos-aws-cli"
-options="-v $HOME/.aws:/root/.aws -it"
+container="" #container name
+options="" #docker run options
 
 
 #run command in docker container. Will pass the name of the script and additional arguments
@@ -10,5 +10,4 @@ options="-v $HOME/.aws:/root/.aws -it"
 echo $0
 echo ""
 
-docker run $options $container "${0##*/}" "${@}"
-
+#docker run $options $container "${0##*/}" "${@}"

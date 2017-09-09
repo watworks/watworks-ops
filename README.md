@@ -20,6 +20,6 @@ Depends on adding "./transparency_commands" to the system path which is done by 
 
 ## AWS
 
-Assumes you have AWS credentials stored in _~/.aws_ and are mapped to _/[user]/.aws_ in an container running _awscli_
+Assumes you have AWS credentials stored in _$HOME/.aws_ and are mapped to _/[user]/.aws_ in an container running _awscli_
 
 Assumes you have a container that will run _awscli_
