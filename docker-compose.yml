@@ -1,0 +1,9 @@
+version: '2'
+
+services:
+  # note that the app container does NOT remain running - this is on purpose.
+  # use the `makefile` to build/run/test the binary as needed
+  awscli:
+    build:
+      context: awscli
+      dockerfile: Dockerfile
