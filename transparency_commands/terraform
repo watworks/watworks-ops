@@ -1,8 +1,9 @@
 #/bin/bash
 
-container="" #container name
-options="" #docker run options
+container="watworksops_terraform"
+#options="-v $HOME/.aws:$HOME/.aws"
 
+options="-v $WATWORKSOPS/terraform:/app/" -w "/app/"
 
 #run command in docker container. Will pass the name of the script and additional arguments
 
@@ -10,4 +11,6 @@ options="" #docker run options
 echo $0
 echo ""
 
-docker run $options $container "${0##*/}" "${@}"
+docker run $options $container "${@}"
+
+

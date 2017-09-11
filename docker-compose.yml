@@ -5,5 +5,10 @@ services:
   # use the `makefile` to build/run/test the container as needed
   awscli:
     build:
-      context: awscli
+      context: containers/awscli
       dockerfile: Dockerfile
+  terraform:
+    build:
+      context: containers/terraform
+      dockerfile: Dockerfile
+  
