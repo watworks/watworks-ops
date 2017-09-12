@@ -1,9 +1,8 @@
 #/bin/bash
 
 container="watworksops_terraform"
-#options="-v $HOME/.aws:$HOME/.aws"
 
-options="-v $HOME/.aws:$HOME/.aws -v /Users/keys/local/git-work/watworks/watworks-ops/terraform:/app/ -w /app/"
+options="-v $HOME/.aws:/root/.aws -v $(PWD)/terraform:/app/ -w /app/"
 
 #run command in docker container. Will pass the name of the script and additional arguments
 

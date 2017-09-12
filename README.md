@@ -23,3 +23,12 @@ Depends on adding "./transparency_commands" to the system path which is done by 
 Assumes you have AWS credentials stored in _$HOME/.aws_ and are mapped to _/[user]/.aws_ in an container running _awscli_
 
 Assumes you have a container that will run _awscli_
+
+## Terraform
+
+Run terrafrom
+
+Maps AWS credentials from $HOME/.aws
+Maps terraform configs from [Watworks-ops]\terraform
+
+Before running plans run _terraform init_ to install the aws provider. Referenced in _providers.tf_
